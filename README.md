@@ -73,6 +73,5 @@ project/
 - **Lab 8**: Async/Parallelism. (Async/FRP Menu)
 
 ## Team
-- Student 1
-- Student 2
-- Student 3
+- Serikkazy Arsen
+- Suleimanova Ramilya
