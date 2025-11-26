@@ -1,0 +1,1712 @@
+{
+  "accounts": [
+    {
+      "id": "acc1",
+      "name": "User 1 Account",
+      "balance": 5000,
+      "currency": "USD"
+    },
+    {
+      "id": "acc2",
+      "name": "User 2 Account",
+      "balance": 3000,
+      "currency": "USD"
+    },
+    {
+      "id": "acc_admin",
+      "name": "Admin Account",
+      "balance": 0,
+      "currency": "USD"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_general",
+      "name": "General",
+      "parent_id": null,
+      "type": "expense"
+    },
+    {
+      "id": "cat_income",
+      "name": "Income",
+      "parent_id": null,
+      "type": "income"
+    },
+    {
+      "id": "cat_food",
+      "name": "Food",
+      "parent_id": null,
+      "type": "expense"
+    },
+    {
+      "id": "cat_groceries",
+      "name": "Groceries",
+      "parent_id": "cat_food",
+      "type": "expense"
+    },
+    {
+      "id": "cat_restaurants",
+      "name": "Restaurants",
+      "parent_id": "cat_food",
+      "type": "expense"
+    },
+    {
+      "id": "cat_transport",
+      "name": "Transport",
+      "parent_id": null,
+      "type": "expense"
+    },
+    {
+      "id": "cat_taxi",
+      "name": "Taxi",
+      "parent_id": "cat_transport",
+      "type": "expense"
+    },
+    {
+      "id": "cat_public",
+      "name": "Public Transport",
+      "parent_id": "cat_transport",
+      "type": "expense"
+    },
+    {
+      "id": "cat_leisure",
+      "name": "Leisure",
+      "parent_id": null,
+      "type": "expense"
+    },
+    {
+      "id": "cat_movies",
+      "name": "Movies",
+      "parent_id": "cat_leisure",
+      "type": "expense"
+    },
+    {
+      "id": "cat_games",
+      "name": "Games",
+      "parent_id": "cat_leisure",
+      "type": "expense"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "b1",
+      "cat_id": "cat_general",
+      "limit": 1000,
+      "period": "month"
+    },
+    {
+      "id": "b2",
+      "cat_id": "cat_food",
+      "limit": 500,
+      "period": "month"
+    },
+    {
+      "id": "b3",
+      "cat_id": "cat_transport",
+      "limit": 300,
+      "period": "month"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_u1_0",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": 4,
+      "ts": "2025-08-15T13:22:23.618586",
+      "note": "User 1 Transaction 1"
+    },
+    {
+      "id": "tx_u1_1",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": -58,
+      "ts": "2025-08-16T13:22:23.618586",
+      "note": "User 1 Transaction 2"
+    },
+    {
+      "id": "tx_u1_2",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": -16,
+      "ts": "2025-08-17T13:22:23.618586",
+      "note": "User 1 Transaction 3"
+    },
+    {
+      "id": "tx_u1_3",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": -79,
+      "ts": "2025-08-18T13:22:23.618586",
+      "note": "User 1 Transaction 4"
+    },
+    {
+      "id": "tx_u1_4",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": 2,
+      "ts": "2025-08-19T13:22:23.618586",
+      "note": "User 1 Transaction 5"
+    },
+    {
+      "id": "tx_u1_5",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": -24,
+      "ts": "2025-08-20T13:22:23.618586",
+      "note": "User 1 Transaction 6"
+    },
+    {
+      "id": "tx_u1_6",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": -32,
+      "ts": "2025-08-21T13:22:23.618586",
+      "note": "User 1 Transaction 7"
+    },
+    {
+      "id": "tx_u1_7",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": 36,
+      "ts": "2025-08-22T13:22:23.618586",
+      "note": "User 1 Transaction 8"
+    },
+    {
+      "id": "tx_u1_8",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -1,
+      "ts": "2025-08-23T13:22:23.618586",
+      "note": "User 1 Transaction 9"
+    },
+    {
+      "id": "tx_u1_9",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": 69,
+      "ts": "2025-08-24T13:22:23.618586",
+      "note": "User 1 Transaction 10"
+    },
+    {
+      "id": "tx_u1_10",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": 77,
+      "ts": "2025-08-25T13:22:23.618586",
+      "note": "User 1 Transaction 11"
+    },
+    {
+      "id": "tx_u1_11",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 30,
+      "ts": "2025-08-26T13:22:23.618586",
+      "note": "User 1 Transaction 12"
+    },
+    {
+      "id": "tx_u1_12",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": -18,
+      "ts": "2025-08-27T13:22:23.618586",
+      "note": "User 1 Transaction 13"
+    },
+    {
+      "id": "tx_u1_13",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -82,
+      "ts": "2025-08-28T13:22:23.618586",
+      "note": "User 1 Transaction 14"
+    },
+    {
+      "id": "tx_u1_14",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": 100,
+      "ts": "2025-08-29T13:22:23.618586",
+      "note": "User 1 Transaction 15"
+    },
+    {
+      "id": "tx_u1_15",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": 96,
+      "ts": "2025-08-30T13:22:23.618586",
+      "note": "User 1 Transaction 16"
+    },
+    {
+      "id": "tx_u1_16",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": -26,
+      "ts": "2025-08-31T13:22:23.618586",
+      "note": "User 1 Transaction 17"
+    },
+    {
+      "id": "tx_u1_17",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": -70,
+      "ts": "2025-09-01T13:22:23.618586",
+      "note": "User 1 Transaction 18"
+    },
+    {
+      "id": "tx_u1_18",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": 9,
+      "ts": "2025-09-02T13:22:23.618586",
+      "note": "User 1 Transaction 19"
+    },
+    {
+      "id": "tx_u1_19",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -10,
+      "ts": "2025-09-03T13:22:23.618586",
+      "note": "User 1 Transaction 20"
+    },
+    {
+      "id": "tx_u1_20",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": 99,
+      "ts": "2025-09-04T13:22:23.618586",
+      "note": "User 1 Transaction 21"
+    },
+    {
+      "id": "tx_u1_21",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": 32,
+      "ts": "2025-09-05T13:22:23.618586",
+      "note": "User 1 Transaction 22"
+    },
+    {
+      "id": "tx_u1_22",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": -75,
+      "ts": "2025-09-06T13:22:23.618586",
+      "note": "User 1 Transaction 23"
+    },
+    {
+      "id": "tx_u1_23",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -100,
+      "ts": "2025-09-07T13:22:23.618586",
+      "note": "User 1 Transaction 24"
+    },
+    {
+      "id": "tx_u1_24",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": -30,
+      "ts": "2025-09-08T13:22:23.618586",
+      "note": "User 1 Transaction 25"
+    },
+    {
+      "id": "tx_u1_25",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 41,
+      "ts": "2025-09-09T13:22:23.618586",
+      "note": "User 1 Transaction 26"
+    },
+    {
+      "id": "tx_u1_26",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": 8,
+      "ts": "2025-09-10T13:22:23.618586",
+      "note": "User 1 Transaction 27"
+    },
+    {
+      "id": "tx_u1_27",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": -49,
+      "ts": "2025-09-11T13:22:23.618586",
+      "note": "User 1 Transaction 28"
+    },
+    {
+      "id": "tx_u1_28",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": -57,
+      "ts": "2025-09-12T13:22:23.618586",
+      "note": "User 1 Transaction 29"
+    },
+    {
+      "id": "tx_u1_29",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": -3,
+      "ts": "2025-09-13T13:22:23.618586",
+      "note": "User 1 Transaction 30"
+    },
+    {
+      "id": "tx_u1_30",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": 38,
+      "ts": "2025-09-14T13:22:23.618586",
+      "note": "User 1 Transaction 31"
+    },
+    {
+      "id": "tx_u1_31",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": 45,
+      "ts": "2025-09-15T13:22:23.618586",
+      "note": "User 1 Transaction 32"
+    },
+    {
+      "id": "tx_u1_32",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -17,
+      "ts": "2025-09-16T13:22:23.618586",
+      "note": "User 1 Transaction 33"
+    },
+    {
+      "id": "tx_u1_33",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": -32,
+      "ts": "2025-09-17T13:22:23.618586",
+      "note": "User 1 Transaction 34"
+    },
+    {
+      "id": "tx_u1_34",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -68,
+      "ts": "2025-09-18T13:22:23.618586",
+      "note": "User 1 Transaction 35"
+    },
+    {
+      "id": "tx_u1_35",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -71,
+      "ts": "2025-09-19T13:22:23.618586",
+      "note": "User 1 Transaction 36"
+    },
+    {
+      "id": "tx_u1_36",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -90,
+      "ts": "2025-09-20T13:22:23.618586",
+      "note": "User 1 Transaction 37"
+    },
+    {
+      "id": "tx_u1_37",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": 61,
+      "ts": "2025-09-21T13:22:23.618586",
+      "note": "User 1 Transaction 38"
+    },
+    {
+      "id": "tx_u1_38",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": 11,
+      "ts": "2025-09-22T13:22:23.618586",
+      "note": "User 1 Transaction 39"
+    },
+    {
+      "id": "tx_u1_39",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": 42,
+      "ts": "2025-09-23T13:22:23.618586",
+      "note": "User 1 Transaction 40"
+    },
+    {
+      "id": "tx_u1_40",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": 55,
+      "ts": "2025-09-24T13:22:23.618586",
+      "note": "User 1 Transaction 41"
+    },
+    {
+      "id": "tx_u1_41",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": -6,
+      "ts": "2025-09-25T13:22:23.618586",
+      "note": "User 1 Transaction 42"
+    },
+    {
+      "id": "tx_u1_42",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 74,
+      "ts": "2025-09-26T13:22:23.618586",
+      "note": "User 1 Transaction 43"
+    },
+    {
+      "id": "tx_u1_43",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": 49,
+      "ts": "2025-09-27T13:22:23.618586",
+      "note": "User 1 Transaction 44"
+    },
+    {
+      "id": "tx_u1_44",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -73,
+      "ts": "2025-09-28T13:22:23.618586",
+      "note": "User 1 Transaction 45"
+    },
+    {
+      "id": "tx_u1_45",
+      "account_id": "acc1",
+      "cat_id": "cat_movies",
+      "amount": -76,
+      "ts": "2025-09-29T13:22:23.618586",
+      "note": "User 1 Transaction 46"
+    },
+    {
+      "id": "tx_u1_46",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": 36,
+      "ts": "2025-09-30T13:22:23.618586",
+      "note": "User 1 Transaction 47"
+    },
+    {
+      "id": "tx_u1_47",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": 7,
+      "ts": "2025-10-01T13:22:23.618586",
+      "note": "User 1 Transaction 48"
+    },
+    {
+      "id": "tx_u1_48",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": -83,
+      "ts": "2025-10-02T13:22:23.618586",
+      "note": "User 1 Transaction 49"
+    },
+    {
+      "id": "tx_u1_49",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -83,
+      "ts": "2025-10-03T13:22:23.618586",
+      "note": "User 1 Transaction 50"
+    },
+    {
+      "id": "tx_u1_50",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -35,
+      "ts": "2025-10-04T13:22:23.618586",
+      "note": "User 1 Transaction 51"
+    },
+    {
+      "id": "tx_u1_51",
+      "account_id": "acc1",
+      "cat_id": "cat_movies",
+      "amount": 66,
+      "ts": "2025-10-05T13:22:23.618586",
+      "note": "User 1 Transaction 52"
+    },
+    {
+      "id": "tx_u1_52",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": -64,
+      "ts": "2025-10-06T13:22:23.618586",
+      "note": "User 1 Transaction 53"
+    },
+    {
+      "id": "tx_u1_53",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 10,
+      "ts": "2025-10-07T13:22:23.618586",
+      "note": "User 1 Transaction 54"
+    },
+    {
+      "id": "tx_u1_54",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -48,
+      "ts": "2025-10-08T13:22:23.618586",
+      "note": "User 1 Transaction 55"
+    },
+    {
+      "id": "tx_u1_55",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": -59,
+      "ts": "2025-10-09T13:22:23.618586",
+      "note": "User 1 Transaction 56"
+    },
+    {
+      "id": "tx_u1_56",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -47,
+      "ts": "2025-10-10T13:22:23.618586",
+      "note": "User 1 Transaction 57"
+    },
+    {
+      "id": "tx_u1_57",
+      "account_id": "acc1",
+      "cat_id": "cat_movies",
+      "amount": 46,
+      "ts": "2025-10-11T13:22:23.618586",
+      "note": "User 1 Transaction 58"
+    },
+    {
+      "id": "tx_u1_58",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -57,
+      "ts": "2025-10-12T13:22:23.618586",
+      "note": "User 1 Transaction 59"
+    },
+    {
+      "id": "tx_u1_59",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": -94,
+      "ts": "2025-10-13T13:22:23.618586",
+      "note": "User 1 Transaction 60"
+    },
+    {
+      "id": "tx_u1_60",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -14,
+      "ts": "2025-10-14T13:22:23.618586",
+      "note": "User 1 Transaction 61"
+    },
+    {
+      "id": "tx_u1_61",
+      "account_id": "acc1",
+      "cat_id": "cat_movies",
+      "amount": -25,
+      "ts": "2025-10-15T13:22:23.618586",
+      "note": "User 1 Transaction 62"
+    },
+    {
+      "id": "tx_u1_62",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": 47,
+      "ts": "2025-10-16T13:22:23.618586",
+      "note": "User 1 Transaction 63"
+    },
+    {
+      "id": "tx_u1_63",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": -8,
+      "ts": "2025-10-17T13:22:23.618586",
+      "note": "User 1 Transaction 64"
+    },
+    {
+      "id": "tx_u1_64",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": 1,
+      "ts": "2025-10-18T13:22:23.618586",
+      "note": "User 1 Transaction 65"
+    },
+    {
+      "id": "tx_u1_65",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": 60,
+      "ts": "2025-10-19T13:22:23.618586",
+      "note": "User 1 Transaction 66"
+    },
+    {
+      "id": "tx_u1_66",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": -26,
+      "ts": "2025-10-20T13:22:23.618586",
+      "note": "User 1 Transaction 67"
+    },
+    {
+      "id": "tx_u1_67",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -59,
+      "ts": "2025-10-21T13:22:23.618586",
+      "note": "User 1 Transaction 68"
+    },
+    {
+      "id": "tx_u1_68",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": -9,
+      "ts": "2025-10-22T13:22:23.618586",
+      "note": "User 1 Transaction 69"
+    },
+    {
+      "id": "tx_u1_69",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": 58,
+      "ts": "2025-10-23T13:22:23.618586",
+      "note": "User 1 Transaction 70"
+    },
+    {
+      "id": "tx_u1_70",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 39,
+      "ts": "2025-10-24T13:22:23.618586",
+      "note": "User 1 Transaction 71"
+    },
+    {
+      "id": "tx_u1_71",
+      "account_id": "acc1",
+      "cat_id": "cat_income",
+      "amount": -53,
+      "ts": "2025-10-25T13:22:23.618586",
+      "note": "User 1 Transaction 72"
+    },
+    {
+      "id": "tx_u1_72",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": -41,
+      "ts": "2025-10-26T13:22:23.618586",
+      "note": "User 1 Transaction 73"
+    },
+    {
+      "id": "tx_u1_73",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": 57,
+      "ts": "2025-10-27T13:22:23.618586",
+      "note": "User 1 Transaction 74"
+    },
+    {
+      "id": "tx_u1_74",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": 75,
+      "ts": "2025-10-28T13:22:23.618586",
+      "note": "User 1 Transaction 75"
+    },
+    {
+      "id": "tx_u1_75",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": 98,
+      "ts": "2025-10-29T13:22:23.618586",
+      "note": "User 1 Transaction 76"
+    },
+    {
+      "id": "tx_u1_76",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": -4,
+      "ts": "2025-10-30T13:22:23.618586",
+      "note": "User 1 Transaction 77"
+    },
+    {
+      "id": "tx_u1_77",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": -59,
+      "ts": "2025-10-31T13:22:23.618586",
+      "note": "User 1 Transaction 78"
+    },
+    {
+      "id": "tx_u1_78",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": -64,
+      "ts": "2025-11-01T13:22:23.618586",
+      "note": "User 1 Transaction 79"
+    },
+    {
+      "id": "tx_u1_79",
+      "account_id": "acc1",
+      "cat_id": "cat_groceries",
+      "amount": -42,
+      "ts": "2025-11-02T13:22:23.618586",
+      "note": "User 1 Transaction 80"
+    },
+    {
+      "id": "tx_u1_80",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 87,
+      "ts": "2025-11-03T13:22:23.618586",
+      "note": "User 1 Transaction 81"
+    },
+    {
+      "id": "tx_u1_81",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": -21,
+      "ts": "2025-11-04T13:22:23.618586",
+      "note": "User 1 Transaction 82"
+    },
+    {
+      "id": "tx_u1_82",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -32,
+      "ts": "2025-11-05T13:22:23.618586",
+      "note": "User 1 Transaction 83"
+    },
+    {
+      "id": "tx_u1_83",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": -73,
+      "ts": "2025-11-06T13:22:23.618586",
+      "note": "User 1 Transaction 84"
+    },
+    {
+      "id": "tx_u1_84",
+      "account_id": "acc1",
+      "cat_id": "cat_general",
+      "amount": -41,
+      "ts": "2025-11-07T13:22:23.618586",
+      "note": "User 1 Transaction 85"
+    },
+    {
+      "id": "tx_u1_85",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": -53,
+      "ts": "2025-11-08T13:22:23.618586",
+      "note": "User 1 Transaction 86"
+    },
+    {
+      "id": "tx_u1_86",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -18,
+      "ts": "2025-11-09T13:22:23.618586",
+      "note": "User 1 Transaction 87"
+    },
+    {
+      "id": "tx_u1_87",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": 95,
+      "ts": "2025-11-10T13:22:23.618586",
+      "note": "User 1 Transaction 88"
+    },
+    {
+      "id": "tx_u1_88",
+      "account_id": "acc1",
+      "cat_id": "cat_public",
+      "amount": -36,
+      "ts": "2025-11-11T13:22:23.618586",
+      "note": "User 1 Transaction 89"
+    },
+    {
+      "id": "tx_u1_89",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": 70,
+      "ts": "2025-11-12T13:22:23.618586",
+      "note": "User 1 Transaction 90"
+    },
+    {
+      "id": "tx_u1_90",
+      "account_id": "acc1",
+      "cat_id": "cat_food",
+      "amount": 99,
+      "ts": "2025-11-13T13:22:23.618586",
+      "note": "User 1 Transaction 91"
+    },
+    {
+      "id": "tx_u1_91",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": -29,
+      "ts": "2025-11-14T13:22:23.618586",
+      "note": "User 1 Transaction 92"
+    },
+    {
+      "id": "tx_u1_92",
+      "account_id": "acc1",
+      "cat_id": "cat_games",
+      "amount": 70,
+      "ts": "2025-11-15T13:22:23.618586",
+      "note": "User 1 Transaction 93"
+    },
+    {
+      "id": "tx_u1_93",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -65,
+      "ts": "2025-11-16T13:22:23.618586",
+      "note": "User 1 Transaction 94"
+    },
+    {
+      "id": "tx_u1_94",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": 61,
+      "ts": "2025-11-17T13:22:23.618586",
+      "note": "User 1 Transaction 95"
+    },
+    {
+      "id": "tx_u1_95",
+      "account_id": "acc1",
+      "cat_id": "cat_movies",
+      "amount": 31,
+      "ts": "2025-11-18T13:22:23.618586",
+      "note": "User 1 Transaction 96"
+    },
+    {
+      "id": "tx_u1_96",
+      "account_id": "acc1",
+      "cat_id": "cat_restaurants",
+      "amount": -64,
+      "ts": "2025-11-19T13:22:23.618586",
+      "note": "User 1 Transaction 97"
+    },
+    {
+      "id": "tx_u1_97",
+      "account_id": "acc1",
+      "cat_id": "cat_leisure",
+      "amount": -25,
+      "ts": "2025-11-20T13:22:23.618586",
+      "note": "User 1 Transaction 98"
+    },
+    {
+      "id": "tx_u1_98",
+      "account_id": "acc1",
+      "cat_id": "cat_taxi",
+      "amount": -27,
+      "ts": "2025-11-21T13:22:23.618586",
+      "note": "User 1 Transaction 99"
+    },
+    {
+      "id": "tx_u1_99",
+      "account_id": "acc1",
+      "cat_id": "cat_transport",
+      "amount": -43,
+      "ts": "2025-11-22T13:22:23.618586",
+      "note": "User 1 Transaction 100"
+    },
+    {
+      "id": "tx_u2_0",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 20,
+      "ts": "2025-08-15T13:22:23.618586",
+      "note": "User 2 Transaction 1"
+    },
+    {
+      "id": "tx_u2_1",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": -46,
+      "ts": "2025-08-16T13:22:23.618586",
+      "note": "User 2 Transaction 2"
+    },
+    {
+      "id": "tx_u2_2",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 34,
+      "ts": "2025-08-17T13:22:23.618586",
+      "note": "User 2 Transaction 3"
+    },
+    {
+      "id": "tx_u2_3",
+      "account_id": "acc2",
+      "cat_id": "cat_movies",
+      "amount": -11,
+      "ts": "2025-08-18T13:22:23.618586",
+      "note": "User 2 Transaction 4"
+    },
+    {
+      "id": "tx_u2_4",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -2,
+      "ts": "2025-08-19T13:22:23.618586",
+      "note": "User 2 Transaction 5"
+    },
+    {
+      "id": "tx_u2_5",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -17,
+      "ts": "2025-08-20T13:22:23.618586",
+      "note": "User 2 Transaction 6"
+    },
+    {
+      "id": "tx_u2_6",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": 27,
+      "ts": "2025-08-21T13:22:23.618586",
+      "note": "User 2 Transaction 7"
+    },
+    {
+      "id": "tx_u2_7",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": -1,
+      "ts": "2025-08-22T13:22:23.618586",
+      "note": "User 2 Transaction 8"
+    },
+    {
+      "id": "tx_u2_8",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": -40,
+      "ts": "2025-08-23T13:22:23.618586",
+      "note": "User 2 Transaction 9"
+    },
+    {
+      "id": "tx_u2_9",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -33,
+      "ts": "2025-08-24T13:22:23.618586",
+      "note": "User 2 Transaction 10"
+    },
+    {
+      "id": "tx_u2_10",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": 0,
+      "ts": "2025-08-25T13:22:23.618586",
+      "note": "User 2 Transaction 11"
+    },
+    {
+      "id": "tx_u2_11",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": 2,
+      "ts": "2025-08-26T13:22:23.618586",
+      "note": "User 2 Transaction 12"
+    },
+    {
+      "id": "tx_u2_12",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": -23,
+      "ts": "2025-08-27T13:22:23.618586",
+      "note": "User 2 Transaction 13"
+    },
+    {
+      "id": "tx_u2_13",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": 26,
+      "ts": "2025-08-28T13:22:23.618586",
+      "note": "User 2 Transaction 14"
+    },
+    {
+      "id": "tx_u2_14",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": 14,
+      "ts": "2025-08-29T13:22:23.618586",
+      "note": "User 2 Transaction 15"
+    },
+    {
+      "id": "tx_u2_15",
+      "account_id": "acc2",
+      "cat_id": "cat_taxi",
+      "amount": -40,
+      "ts": "2025-08-30T13:22:23.618586",
+      "note": "User 2 Transaction 16"
+    },
+    {
+      "id": "tx_u2_16",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": 46,
+      "ts": "2025-08-31T13:22:23.618586",
+      "note": "User 2 Transaction 17"
+    },
+    {
+      "id": "tx_u2_17",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": -31,
+      "ts": "2025-09-01T13:22:23.618586",
+      "note": "User 2 Transaction 18"
+    },
+    {
+      "id": "tx_u2_18",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": 27,
+      "ts": "2025-09-02T13:22:23.618586",
+      "note": "User 2 Transaction 19"
+    },
+    {
+      "id": "tx_u2_19",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": -35,
+      "ts": "2025-09-03T13:22:23.618586",
+      "note": "User 2 Transaction 20"
+    },
+    {
+      "id": "tx_u2_20",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": -42,
+      "ts": "2025-09-04T13:22:23.618586",
+      "note": "User 2 Transaction 21"
+    },
+    {
+      "id": "tx_u2_21",
+      "account_id": "acc2",
+      "cat_id": "cat_movies",
+      "amount": 30,
+      "ts": "2025-09-05T13:22:23.618586",
+      "note": "User 2 Transaction 22"
+    },
+    {
+      "id": "tx_u2_22",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": -37,
+      "ts": "2025-09-06T13:22:23.618586",
+      "note": "User 2 Transaction 23"
+    },
+    {
+      "id": "tx_u2_23",
+      "account_id": "acc2",
+      "cat_id": "cat_food",
+      "amount": -13,
+      "ts": "2025-09-07T13:22:23.618586",
+      "note": "User 2 Transaction 24"
+    },
+    {
+      "id": "tx_u2_24",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -21,
+      "ts": "2025-09-08T13:22:23.618586",
+      "note": "User 2 Transaction 25"
+    },
+    {
+      "id": "tx_u2_25",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": 2,
+      "ts": "2025-09-09T13:22:23.618586",
+      "note": "User 2 Transaction 26"
+    },
+    {
+      "id": "tx_u2_26",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": 31,
+      "ts": "2025-09-10T13:22:23.618586",
+      "note": "User 2 Transaction 27"
+    },
+    {
+      "id": "tx_u2_27",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": -46,
+      "ts": "2025-09-11T13:22:23.618586",
+      "note": "User 2 Transaction 28"
+    },
+    {
+      "id": "tx_u2_28",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 15,
+      "ts": "2025-09-12T13:22:23.618586",
+      "note": "User 2 Transaction 29"
+    },
+    {
+      "id": "tx_u2_29",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": -31,
+      "ts": "2025-09-13T13:22:23.618586",
+      "note": "User 2 Transaction 30"
+    },
+    {
+      "id": "tx_u2_30",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": 0,
+      "ts": "2025-09-14T13:22:23.618586",
+      "note": "User 2 Transaction 31"
+    },
+    {
+      "id": "tx_u2_31",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -11,
+      "ts": "2025-09-15T13:22:23.618586",
+      "note": "User 2 Transaction 32"
+    },
+    {
+      "id": "tx_u2_32",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": 38,
+      "ts": "2025-09-16T13:22:23.618586",
+      "note": "User 2 Transaction 33"
+    },
+    {
+      "id": "tx_u2_33",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": -21,
+      "ts": "2025-09-17T13:22:23.618586",
+      "note": "User 2 Transaction 34"
+    },
+    {
+      "id": "tx_u2_34",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -38,
+      "ts": "2025-09-18T13:22:23.618586",
+      "note": "User 2 Transaction 35"
+    },
+    {
+      "id": "tx_u2_35",
+      "account_id": "acc2",
+      "cat_id": "cat_movies",
+      "amount": -2,
+      "ts": "2025-09-19T13:22:23.618586",
+      "note": "User 2 Transaction 36"
+    },
+    {
+      "id": "tx_u2_36",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": -10,
+      "ts": "2025-09-20T13:22:23.618586",
+      "note": "User 2 Transaction 37"
+    },
+    {
+      "id": "tx_u2_37",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": -29,
+      "ts": "2025-09-21T13:22:23.618586",
+      "note": "User 2 Transaction 38"
+    },
+    {
+      "id": "tx_u2_38",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 23,
+      "ts": "2025-09-22T13:22:23.618586",
+      "note": "User 2 Transaction 39"
+    },
+    {
+      "id": "tx_u2_39",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": -44,
+      "ts": "2025-09-23T13:22:23.618586",
+      "note": "User 2 Transaction 40"
+    },
+    {
+      "id": "tx_u2_40",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -40,
+      "ts": "2025-09-24T13:22:23.618586",
+      "note": "User 2 Transaction 41"
+    },
+    {
+      "id": "tx_u2_41",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -16,
+      "ts": "2025-09-25T13:22:23.618586",
+      "note": "User 2 Transaction 42"
+    },
+    {
+      "id": "tx_u2_42",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": 5,
+      "ts": "2025-09-26T13:22:23.618586",
+      "note": "User 2 Transaction 43"
+    },
+    {
+      "id": "tx_u2_43",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": 15,
+      "ts": "2025-09-27T13:22:23.618586",
+      "note": "User 2 Transaction 44"
+    },
+    {
+      "id": "tx_u2_44",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": -45,
+      "ts": "2025-09-28T13:22:23.618586",
+      "note": "User 2 Transaction 45"
+    },
+    {
+      "id": "tx_u2_45",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": -25,
+      "ts": "2025-09-29T13:22:23.618586",
+      "note": "User 2 Transaction 46"
+    },
+    {
+      "id": "tx_u2_46",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": -13,
+      "ts": "2025-09-30T13:22:23.618586",
+      "note": "User 2 Transaction 47"
+    },
+    {
+      "id": "tx_u2_47",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": 46,
+      "ts": "2025-10-01T13:22:23.618586",
+      "note": "User 2 Transaction 48"
+    },
+    {
+      "id": "tx_u2_48",
+      "account_id": "acc2",
+      "cat_id": "cat_food",
+      "amount": 19,
+      "ts": "2025-10-02T13:22:23.618586",
+      "note": "User 2 Transaction 49"
+    },
+    {
+      "id": "tx_u2_49",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -7,
+      "ts": "2025-10-03T13:22:23.618586",
+      "note": "User 2 Transaction 50"
+    },
+    {
+      "id": "tx_u2_50",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -16,
+      "ts": "2025-10-04T13:22:23.618586",
+      "note": "User 2 Transaction 51"
+    },
+    {
+      "id": "tx_u2_51",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -18,
+      "ts": "2025-10-05T13:22:23.618586",
+      "note": "User 2 Transaction 52"
+    },
+    {
+      "id": "tx_u2_52",
+      "account_id": "acc2",
+      "cat_id": "cat_food",
+      "amount": -23,
+      "ts": "2025-10-06T13:22:23.618586",
+      "note": "User 2 Transaction 53"
+    },
+    {
+      "id": "tx_u2_53",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": 50,
+      "ts": "2025-10-07T13:22:23.618586",
+      "note": "User 2 Transaction 54"
+    },
+    {
+      "id": "tx_u2_54",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -34,
+      "ts": "2025-10-08T13:22:23.618586",
+      "note": "User 2 Transaction 55"
+    },
+    {
+      "id": "tx_u2_55",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": -44,
+      "ts": "2025-10-09T13:22:23.618586",
+      "note": "User 2 Transaction 56"
+    },
+    {
+      "id": "tx_u2_56",
+      "account_id": "acc2",
+      "cat_id": "cat_taxi",
+      "amount": -50,
+      "ts": "2025-10-10T13:22:23.618586",
+      "note": "User 2 Transaction 57"
+    },
+    {
+      "id": "tx_u2_57",
+      "account_id": "acc2",
+      "cat_id": "cat_movies",
+      "amount": 19,
+      "ts": "2025-10-11T13:22:23.618586",
+      "note": "User 2 Transaction 58"
+    },
+    {
+      "id": "tx_u2_58",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": -36,
+      "ts": "2025-10-12T13:22:23.618586",
+      "note": "User 2 Transaction 59"
+    },
+    {
+      "id": "tx_u2_59",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -11,
+      "ts": "2025-10-13T13:22:23.618586",
+      "note": "User 2 Transaction 60"
+    },
+    {
+      "id": "tx_u2_60",
+      "account_id": "acc2",
+      "cat_id": "cat_food",
+      "amount": -41,
+      "ts": "2025-10-14T13:22:23.618586",
+      "note": "User 2 Transaction 61"
+    },
+    {
+      "id": "tx_u2_61",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 41,
+      "ts": "2025-10-15T13:22:23.618586",
+      "note": "User 2 Transaction 62"
+    },
+    {
+      "id": "tx_u2_62",
+      "account_id": "acc2",
+      "cat_id": "cat_movies",
+      "amount": -25,
+      "ts": "2025-10-16T13:22:23.618586",
+      "note": "User 2 Transaction 63"
+    },
+    {
+      "id": "tx_u2_63",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 14,
+      "ts": "2025-10-17T13:22:23.618586",
+      "note": "User 2 Transaction 64"
+    },
+    {
+      "id": "tx_u2_64",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": -36,
+      "ts": "2025-10-18T13:22:23.618586",
+      "note": "User 2 Transaction 65"
+    },
+    {
+      "id": "tx_u2_65",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -21,
+      "ts": "2025-10-19T13:22:23.618586",
+      "note": "User 2 Transaction 66"
+    },
+    {
+      "id": "tx_u2_66",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": 26,
+      "ts": "2025-10-20T13:22:23.618586",
+      "note": "User 2 Transaction 67"
+    },
+    {
+      "id": "tx_u2_67",
+      "account_id": "acc2",
+      "cat_id": "cat_movies",
+      "amount": -14,
+      "ts": "2025-10-21T13:22:23.618586",
+      "note": "User 2 Transaction 68"
+    },
+    {
+      "id": "tx_u2_68",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": 23,
+      "ts": "2025-10-22T13:22:23.618586",
+      "note": "User 2 Transaction 69"
+    },
+    {
+      "id": "tx_u2_69",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": -32,
+      "ts": "2025-10-23T13:22:23.618586",
+      "note": "User 2 Transaction 70"
+    },
+    {
+      "id": "tx_u2_70",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": 32,
+      "ts": "2025-10-24T13:22:23.618586",
+      "note": "User 2 Transaction 71"
+    },
+    {
+      "id": "tx_u2_71",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": 45,
+      "ts": "2025-10-25T13:22:23.618586",
+      "note": "User 2 Transaction 72"
+    },
+    {
+      "id": "tx_u2_72",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -7,
+      "ts": "2025-10-26T13:22:23.618586",
+      "note": "User 2 Transaction 73"
+    },
+    {
+      "id": "tx_u2_73",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": 4,
+      "ts": "2025-10-27T13:22:23.618586",
+      "note": "User 2 Transaction 74"
+    },
+    {
+      "id": "tx_u2_74",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -22,
+      "ts": "2025-10-28T13:22:23.618586",
+      "note": "User 2 Transaction 75"
+    },
+    {
+      "id": "tx_u2_75",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": 39,
+      "ts": "2025-10-29T13:22:23.618586",
+      "note": "User 2 Transaction 76"
+    },
+    {
+      "id": "tx_u2_76",
+      "account_id": "acc2",
+      "cat_id": "cat_restaurants",
+      "amount": 13,
+      "ts": "2025-10-30T13:22:23.618586",
+      "note": "User 2 Transaction 77"
+    },
+    {
+      "id": "tx_u2_77",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -3,
+      "ts": "2025-10-31T13:22:23.618586",
+      "note": "User 2 Transaction 78"
+    },
+    {
+      "id": "tx_u2_78",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": -33,
+      "ts": "2025-11-01T13:22:23.618586",
+      "note": "User 2 Transaction 79"
+    },
+    {
+      "id": "tx_u2_79",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -47,
+      "ts": "2025-11-02T13:22:23.618586",
+      "note": "User 2 Transaction 80"
+    },
+    {
+      "id": "tx_u2_80",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": 25,
+      "ts": "2025-11-03T13:22:23.618586",
+      "note": "User 2 Transaction 81"
+    },
+    {
+      "id": "tx_u2_81",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": -4,
+      "ts": "2025-11-04T13:22:23.618586",
+      "note": "User 2 Transaction 82"
+    },
+    {
+      "id": "tx_u2_82",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": -47,
+      "ts": "2025-11-05T13:22:23.618586",
+      "note": "User 2 Transaction 83"
+    },
+    {
+      "id": "tx_u2_83",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": -21,
+      "ts": "2025-11-06T13:22:23.618586",
+      "note": "User 2 Transaction 84"
+    },
+    {
+      "id": "tx_u2_84",
+      "account_id": "acc2",
+      "cat_id": "cat_groceries",
+      "amount": 50,
+      "ts": "2025-11-07T13:22:23.618586",
+      "note": "User 2 Transaction 85"
+    },
+    {
+      "id": "tx_u2_85",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": 19,
+      "ts": "2025-11-08T13:22:23.618586",
+      "note": "User 2 Transaction 86"
+    },
+    {
+      "id": "tx_u2_86",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": -42,
+      "ts": "2025-11-09T13:22:23.618586",
+      "note": "User 2 Transaction 87"
+    },
+    {
+      "id": "tx_u2_87",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 26,
+      "ts": "2025-11-10T13:22:23.618586",
+      "note": "User 2 Transaction 88"
+    },
+    {
+      "id": "tx_u2_88",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": 45,
+      "ts": "2025-11-11T13:22:23.618586",
+      "note": "User 2 Transaction 89"
+    },
+    {
+      "id": "tx_u2_89",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": 11,
+      "ts": "2025-11-12T13:22:23.618586",
+      "note": "User 2 Transaction 90"
+    },
+    {
+      "id": "tx_u2_90",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": -48,
+      "ts": "2025-11-13T13:22:23.618586",
+      "note": "User 2 Transaction 91"
+    },
+    {
+      "id": "tx_u2_91",
+      "account_id": "acc2",
+      "cat_id": "cat_food",
+      "amount": 22,
+      "ts": "2025-11-14T13:22:23.618586",
+      "note": "User 2 Transaction 92"
+    },
+    {
+      "id": "tx_u2_92",
+      "account_id": "acc2",
+      "cat_id": "cat_leisure",
+      "amount": 3,
+      "ts": "2025-11-15T13:22:23.618586",
+      "note": "User 2 Transaction 93"
+    },
+    {
+      "id": "tx_u2_93",
+      "account_id": "acc2",
+      "cat_id": "cat_public",
+      "amount": 12,
+      "ts": "2025-11-16T13:22:23.618586",
+      "note": "User 2 Transaction 94"
+    },
+    {
+      "id": "tx_u2_94",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 5,
+      "ts": "2025-11-17T13:22:23.618586",
+      "note": "User 2 Transaction 95"
+    },
+    {
+      "id": "tx_u2_95",
+      "account_id": "acc2",
+      "cat_id": "cat_games",
+      "amount": -18,
+      "ts": "2025-11-18T13:22:23.618586",
+      "note": "User 2 Transaction 96"
+    },
+    {
+      "id": "tx_u2_96",
+      "account_id": "acc2",
+      "cat_id": "cat_general",
+      "amount": 40,
+      "ts": "2025-11-19T13:22:23.618586",
+      "note": "User 2 Transaction 97"
+    },
+    {
+      "id": "tx_u2_97",
+      "account_id": "acc2",
+      "cat_id": "cat_food",
+      "amount": 48,
+      "ts": "2025-11-20T13:22:23.618586",
+      "note": "User 2 Transaction 98"
+    },
+    {
+      "id": "tx_u2_98",
+      "account_id": "acc2",
+      "cat_id": "cat_income",
+      "amount": 39,
+      "ts": "2025-11-21T13:22:23.618586",
+      "note": "User 2 Transaction 99"
+    },
+    {
+      "id": "tx_u2_99",
+      "account_id": "acc2",
+      "cat_id": "cat_transport",
+      "amount": 6,
+      "ts": "2025-11-22T13:22:23.618586",
+      "note": "User 2 Transaction 100"
+    }
+  ]
+}

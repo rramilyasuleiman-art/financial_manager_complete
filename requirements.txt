@@ -1,0 +1,5 @@
+streamlit
+pytest
+pytest-asyncio
+ruff
+black
